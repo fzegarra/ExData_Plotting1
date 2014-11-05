@@ -5,7 +5,7 @@ data<-read.table("household_power_consumption.txt", header=TRUE, sep=";", na.str
 x<-data[(data$Date == "1/2/2007" | data$Date == "2/2/2007"), ]
 ## Pasting the data Date/Time to build the graphic. Is 
 ## recommended the use of the function "attach" that allow us to access the  
-## database using names only.
+## database using names only for memory usage purposes.
 attach(x)
 y<-paste(Date, Time)
 ## Formatting the data in DataTime column
